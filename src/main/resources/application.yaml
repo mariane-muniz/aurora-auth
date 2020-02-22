@@ -2,7 +2,7 @@ server:
   port: 8083
 spring:
   application:
-    name: auth
+    name: aurora-auth
   jpa:
     show-sql: false
     hibernate:
