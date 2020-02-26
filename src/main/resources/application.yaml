@@ -13,7 +13,7 @@ spring:
   jmx:
     enabled: false
   datasource:
-    url: jdbc:mysql://192.168.0.11:3306/aurora?allowPublicKeyRetrieval=true&sslMode=DISABLED
+    url: jdbc:mysql://192.168.0.50:3306/aurora?allowPublicKeyRetrieval=true&sslMode=DISABLED
     username: root
     password: password
 eureka:
