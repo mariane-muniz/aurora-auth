@@ -1,3 +1,6 @@
 spring:
   application:
     name: aurora-auth
+  cloud:
+    config:
+      uri: http://configuration-server.com:8084
