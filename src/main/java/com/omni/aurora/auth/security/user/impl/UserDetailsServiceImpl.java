@@ -24,7 +24,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     private final ApplicationUserRepository applicationUserRepository;
 
     @Override
-    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+    public UserDetails loadUserByUsername(final String username) throws UsernameNotFoundException {
         log.info("Searching user in DB, username: " + username);
         final ApplicationUser user = this.applicationUserRepository.findByUsername(username);
         if (Objects.isNull(user))
@@ -35,7 +35,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     private static final class CustomUserDetails extends ApplicationUser implements UserDetails {
 
-        CustomUserDetails(@NotNull ApplicationUser applicationUser) {
+        CustomUserDetails(final @NotNull ApplicationUser applicationUser) {
             super(applicationUser);
         }
 
