@@ -3,6 +3,6 @@ spring:
     name: aurora-auth
   cloud:
     config:
-      uri: http://configuration-server.com:8084
+      uri: http://aurora-configuration:8084
   zipkin:
     base-url: http://192.168.0.50:9411
