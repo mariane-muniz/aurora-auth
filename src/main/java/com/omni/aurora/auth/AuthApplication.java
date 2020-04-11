@@ -1,6 +1,6 @@
 package com.omni.aurora.auth;
 
-import com.omni.aurora.core.property.JWTConfiguration;
+import com.omni.aurora.token.property.JWTConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.domain.EntityScan;

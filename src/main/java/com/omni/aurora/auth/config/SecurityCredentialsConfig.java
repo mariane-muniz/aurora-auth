@@ -1,7 +1,7 @@
 package com.omni.aurora.auth.config;
 
 import com.omni.aurora.auth.security.filter.JWTUsernameAndPasswordAuthenticationFilter;
-import com.omni.aurora.core.property.JWTConfiguration;
+import com.omni.aurora.token.property.JWTConfiguration;
 import com.omni.aurora.token.config.SecurityTokenConfig;
 import com.omni.aurora.token.converter.TokenConverter;
 import com.omni.aurora.token.creator.TokenCreator;

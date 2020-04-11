@@ -3,7 +3,7 @@ package com.omni.aurora.auth.security.filter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jwt.SignedJWT;
 import com.omni.aurora.core.model.ApplicationUser;
-import com.omni.aurora.core.property.JWTConfiguration;
+import com.omni.aurora.token.property.JWTConfiguration;
 import com.omni.aurora.token.creator.TokenCreator;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -19,7 +19,6 @@ import javax.servlet.FilterChain;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Collections;
-import java.util.Objects;
 
 @RequiredArgsConstructor(onConstructor = @__(@Autowired))
 @Slf4j

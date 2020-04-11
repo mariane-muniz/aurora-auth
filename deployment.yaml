@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: aurora-auth-deployment
+spec:
+  selector:
+    matchLabels:
+      run: auth
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        run: auth
+    spec:
+      containers:
+        - name: auth
+          image: marianemuniz/aurora-auth:latest
+          restartPolicy: Always
+          ports:
+            - containerPort: 8083
+      dnsPolicy: ClusterFirst

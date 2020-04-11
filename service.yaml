@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: aurora-auth-service
+  namespace: default
+spec:
+  ports:
+    - protocol: TCP
+      port: 8083
+      targetPort: 8083
+  selector:
+    run: auth
+  type: ClusterIP
+status:
+  loadBalancer: {}
