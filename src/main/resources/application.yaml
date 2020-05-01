@@ -21,3 +21,24 @@ eureka:
     service-url:
       defaultZone: http://localhost:8081/eureka
     register-with-eureka: true
+
+logging:
+  level:
+    root: info
+  file:
+    max-history: 1
+    max-size: 10MB
+    name: /home/scott/Projects/logs/auth.log
+
+management:
+  endpoint:
+    shutdown:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+
+endpoints:
+  shutdown:
+    enabled: true
